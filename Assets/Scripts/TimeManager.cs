@@ -1,18 +1,18 @@
-using TMPro;
+ï»¿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
-    [SerializeField, Header("®É¶¡¤å¦r")]
+    [SerializeField, Header("æ™‚é–“æ–‡å­—")]
     private TMP_Text textTime;
-    [SerializeField, Header("­Ë¼Æ®É¶¡")]
+    [SerializeField, Header("å€’æ•¸æ™‚é–“")]
     private float timeTotal = 60;
-    [SerializeField, Header("µe¥¬¹CÀ¸µ²§ô")]
+    [SerializeField, Header("ç•«å¸ƒéŠæˆ²çµæŸ")]
     private GameObject canvasFinalObject;
-    [SerializeField, Header("ÀË¬d°Ï°ì¤À¼ÆºŞ²z¾¹")]
+    [SerializeField, Header("æª¢æŸ¥å€åŸŸåˆ†æ•¸ç®¡ç†å™¨")]
     private GameObject scoreManagerObject;
-    [SerializeField, Header("«ö¶s¥Í¦¨Äx²y")]
+    [SerializeField, Header("æŒ‰éˆ•ç”Ÿæˆç±ƒçƒ")]
     private Button btnSpawn;
 
     private void Update()

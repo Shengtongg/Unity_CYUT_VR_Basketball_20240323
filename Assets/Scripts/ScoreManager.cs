@@ -1,16 +1,16 @@
-using TMPro;
+ï»¿using TMPro;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    [SerializeField, Header("¤À¼Æ¤å¦r")]
+    [SerializeField, Header("åˆ†æ•¸æ–‡å­—")]
     private TMP_Text textScore;
-    [SerializeField, Header("­µ®Ä¨Ó·½")]
+    [SerializeField, Header("éŸ³æ•ˆä¾†æº")]
     private AudioSource aud;
-    [SerializeField, Header("¶iÄx­µ®Ä")]
+    [SerializeField, Header("é€²ç±ƒéŸ³æ•ˆ")]
     private AudioClip soundBasketball;
 
-    private string basketballName = "Äx²y";
+    private string basketballName = "ç±ƒçƒ";
     private int score;
 
 
@@ -20,7 +20,7 @@ public class ScoreManager : MonoBehaviour
         if (other.name.Contains(basketballName))
         {
             score += 2;
-            //print($"<color=#f93>¤À¼Æ : {score}</color>");
+            //print($"<color=#f93>åˆ†æ•¸ : {score}</color>");
             textScore.text = $"SCORE - {score}";
             aud.PlayOneShot(soundBasketball);
         }
